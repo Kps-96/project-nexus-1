@@ -4,88 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="container">
         <nav class="nav-bar">
-            <h1><span>!</span>Food</h1>
+            <h1 class="nav-title"><span>!</span>Food</h1>
             <ul>
                 <a href="" class="nav-list">Home</a>
                 <a href="" class="nav-list">About Us</a>
                 <a href="" class="nav-list">Product</a>
                 <a href="" class="nav-list">Contact Us</a>
             </ul>
-            <button class="nav-login">Log In</button>
-            <button class="nav-signup">Sign Up</button>
+            <div class="nav-btn">
+                <button class="nav-login">Log In</button>
+                <button class="nav-signup">Sign Up</button>
+            </div>
         </nav>
         <main class="main">
             <div class="main-cont">
                 <p>Welcome to our Restaurant</p>
-                <h1>Delicious Foods For Every Occasion And Festival</h1>
-                <p>Delicious Foods For Every Occasion And Festival Delicious For Every Occasion</p>
+                <h1>Delicious Foods <br>For Every Occasion <br>And Festival</h1>
+                <p>Delicious Foods For Every Occasion And Festival <br> Delicious For Every Occasion</p>
                 <button>Order Now</button>
             </div>
             <div class="main-img">
-                <img src="" alt="" class="main-img">
+                <img src="/src/main-img.jpg" alt="main-img" class="main-image">
                 <img src="" alt="" class="img-frame"></img>
                 <img src="" alt="" class="img-frame"></img>
             </div>
         </main>
     </div>
-    <div class="container">
-        <h1>About the company</h1>
-        <div class="con2-box">
-            <img src="" alt="">
-            <h3>More than 10 years</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur quo autem reprehenderit magni assumenda accusantium corrupti ducimus, similique iste.</p>
-        </div>
-        <div class="con2-box">
-            <img src="" alt="">
-            <h3>Cutting Edge infrastructure</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur quo autem reprehenderit magni assumenda accusantium corrupti ducimus, similique iste.</p>
-        </div>
-        <div class="con2-box">
-            <img src="" alt="">
-            <h3>Discover our acclaimed product</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur quo autem reprehenderit magni assumenda accusantium corrupti ducimus, similique iste.</p>
+    <!----------------------------------------------------------------------------------------------->
+
+    <div class="container container-1">
+        <h1 class="heading-page2">About the company</h1>
+        <div class="main-con2">
+            <div class="con2-box">
+                <img src="/src/pg-img-1.png" alt="image1">
+                <h3>More than 10 years</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur quo autem reprehenderit magni assumenda accusantium corrupti ducimus, similique iste.</p>
+            </div>
+            <div class="con2-box">
+                <img src="/src/pg-img-2.png" alt="image2">
+                <h3>Cutting Edge infrastructure</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur quo autem reprehenderit magni assumenda accusantium corrupti ducimus, similique iste.</p>
+            </div>
+            <div class="con2-box">
+                <img src="/src/pg-imag-3.png" alt="image3">
+                <h3>Discover our acclaimed product</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur quo autem reprehenderit magni assumenda accusantium corrupti ducimus, similique iste.</p>
+            </div>
         </div>
         <button>Read More</button>
     </div>
-    <div class="container">
-        <h1>Our Popular Food menu</h1>
-        <slider>
-            <!-- some div or scloling menus -->
-        </slider>
-    </div>
-    <div class="container">
-        <p>Latest Blog</p>
-        <h1>Our latest food menu</h1>
-        <slider>
 
-        </slider>
+     <!----------------------------------------------------------------------------------------------->
+
+    <div class="container container-2">
+        <h1>Our Popular Food menu</h1>
+
+        <div class="card-slider">
+            <div class="cards">
+                <div class="card">
+                    <img src="/src/food-plate-1.png" alt="Image 1">
+                    <h3>Tomato Salad</h3>
+                    <p>Vegetarian</p>
+                    <h1>$25</h1>
+                </div>
+                <div class="card">
+                    <img src="/src/food-plate-1.png" alt="Image 2">
+                    <h3>Noodles Chicken</h3>
+                    <p>Non-Vegetarian</p>
+                    <h1>$20</h1>
+                </div>
+                <div class="card">
+                    <img src="/src/food-plate-1.png" alt="Image 3">
+                    <h3>Barbecue Chicken </h3>
+                    <p>Non-Vegetarian</p>
+                    <h1>$90</h1>
+                </div>
+                <div class="card">
+                    <img src="/src/food-plate-1.png" alt="Image 4">
+                    <h3>Delicious Dosa</h3>
+                    <p>Vegetarian</p>
+                    <h1>$20</h1>
+                </div>
+            </div>
+            <button class="prev slide-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next slide-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
     </div>
-    <div class="container">
-        <img src="" alt="">
+
+    <!----------------------------------------------------------------------------------------------->
+    <div class="container container-3">
+        <p class="pg4-para">Latest Blog</p>
+        <h1 class="pg4-heading">Our latest food menu</h1>
+        <div class="pg4-cards">
+            <div class="pg4-card">
+                <img src="/src/pg4-img-1.jpg" alt="">
+                <p>Jan 16 2024</p>
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                <h1>$35.00</h1>
+            </div>
+            <div class="pg4-card">
+                <img src="/src/pg4-img-2.jpg" alt="">
+                <p>Jan 16 2024</p>
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                <h1>$35.00</h1>
+            </div>
+            <div class="pg4-card card-3">
+                <img src="/src/pg4-img-3.jpg" alt="">
+                <p>Jan 16 2024</p>
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                <h1>$35.00</h1>
+            </div>
+        </div>
+    </div>
+     <!----------------------------------------------------------------------------------------------->
+
+    <div class="container container-5">
+        <div class="pg5-img">
+            <img src="/src/pg5-img-1.png" alt="img" class="img1">
+        </div>
         <div class="table">
             <h3>Reservation</h3>
             <h1>Book your Table</h1>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="EMAIL">
+            <input type="text" placeholder="dd-mm-yyyy">
+            <input type="text" placeholder="--/--">
+            <input type="text" placeholder="PEOPLES">
+            <input type="button" value="FIND TABLE">
         </div>
+        <!-- <div class="pg5-img">
+            <img src="/src/pg5-img-2.jpg" alt="img" class="img2">
+        </div> -->
     </div>
-    <div>
-        <div>
+
+    <div class="fooder">
+        <div class="fooder-left">
             <h1>Food</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus, accusamus laboriosam quia sed rerum nostrum quidem hic ab. Quae debitis, officia voluptates ipsa vel possimus excepturi voluptatibus perferendis dolorum.</p>
         </div>
-        <div>
+        <div class="fooder-right">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit.</p>
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>

@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/src/restarent icons.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <nav class="nav-bar">
-            <h1 class="nav-title"><span>!</span>Food</h1>
+            <div class="img-nav-title" onclick="reload()">
+                <img class="nav-title-img" src="/src/restarent icons.png" alt="restaurant icon">
+                <h1 class="nav-title">KPS Restaurant</h1>
+            </div>
             <ul>
                 <a href="" class="nav-list">Home</a>
-                <a href="" class="nav-list">About Us</a>
-                <a href="" class="nav-list">Product</a>
-                <a href="" class="nav-list">Contact Us</a>
+                <a href="#aboutus" class="nav-list">About Us</a>
+                <a href="#product" class="nav-list">Product</a>
+                <a href="#contactus" class="nav-list">Contact Us</a>
             </ul>
             <div class="nav-btn">
-                <button class="nav-login">Log In</button>
-                <button class="nav-signup">Sign Up</button>
+               <a href="/login.html"><button class="nav-login">Log In</button></a> 
+               <a href="/signup.html"><button class="nav-signup">Sign Up</button></a> 
             </div>
         </nav>
         <main class="main">
@@ -37,7 +41,7 @@
     </div>
     <!----------------------------------------------------------------------------------------------->
 
-    <div class="container container-1">
+    <div class="container container-1" id="aboutus">
         <h1 class="heading-page2">About the company</h1>
         <div class="main-con2">
             <div class="con2-box">
@@ -61,7 +65,7 @@
 
      <!----------------------------------------------------------------------------------------------->
 
-    <div class="container container-2">
+    <div class="container container-2" id="product">
         <h1>Our Popular Food menu</h1>
 
         <div class="card-slider">
@@ -131,26 +135,28 @@
         <div class="table">
             <h3>Reservation</h3>
             <h1>Book your Table</h1>
-            <input type="text" placeholder="NAME">
-            <input type="text" placeholder="EMAIL">
-            <input type="text" placeholder="dd-mm-yyyy">
-            <input type="text" placeholder="--/--">
-            <input type="text" placeholder="PEOPLES">
-            <input type="button" value="FIND TABLE">
+            <form action="#">
+                <input type="text" placeholder="NAME" required>
+                <input type="email" placeholder="EMAIL" required>
+                <input type="date" placeholder="dd-mm-yyyy" required>
+                <input type="time" placeholder="--/--" required>
+                <input type="number" placeholder="PEOPLES" required>
+                <input type="submit" value="FIND TABLE">
+            </form>
         </div>
-        <!-- <div class="pg5-img">
-            <img src="/src/pg5-img-2.jpg" alt="img" class="img2">
-        </div> -->
     </div>
 
-    <div class="fooder">
+    <div class="fooder" id="contactus">
         <div class="fooder-left">
-            <h1>Food</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus, accusamus laboriosam quia sed rerum nostrum quidem hic ab. Quae debitis, officia voluptates ipsa vel possimus excepturi voluptatibus perferendis dolorum.</p>
+            <h1>KPS Restaurant <img src="/src/restaurent-fooder.png" alt=""></h1>
+            <p>Indulge in a culinary journey at our restaurant, where every dish is crafted with passion and served with elegance. Savor the flavors and enjoy an unforgettable dining experience.</p>
         </div>
         <div class="fooder-right">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit.</p>
+            <p><b>Address:</b> <br>
+                123 Gourmet Avenue, <br>
+                Foodie Town, FL 56789</p>
+            <p><b>Phone:</b>
+                (123) 456-7890</p>
         </div>
     </div>
     <script src="/script.js"></script>

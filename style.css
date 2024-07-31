@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    transition: all 0.6s ease-in-out;
 }
 
 .container{
@@ -33,8 +34,29 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: #f88a22;
+}
+
+button:hover{
+    background-color: #f88a22;
+    color: #fff;
+}
+
 .nav-title{
     padding-left: 15px;
+    padding-top: 10px;
+}
+
+.img-nav-title{
+    display: flex;
+    cursor: pointer;
+}
+
+.nav-title-img{
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px;
 }
 
 button{
@@ -52,6 +74,8 @@ button{
     border: 1px orange solid;
     color: orange;
     width: fit-content;
+    background-color: #ff7b0049;
+    border-radius: 20px;
 }
 
 .main-cont p:nth-child(3){
@@ -115,6 +139,7 @@ button{
 .con2-box{
     max-width: 25%;
     height: 350px;
+    border-radius: 15px;
 }
 
 .con2-box img{
@@ -127,6 +152,12 @@ button{
     padding: 10px;
     font-size: 24px;
     text-wrap: nowrap;
+}
+
+.con2-box:hover{
+    box-shadow: 3px 3px 20px #f88a22,
+                -3px -3px 20px #f88a22;
+    
 }
 
 .con2-box p{
@@ -213,12 +244,14 @@ button.next {
 .container-3 .pg4-para{
     border: 2px orange solid;
     padding: 10px 35px;
-    color: #f88a22;
+    color: black;
+    font-weight: 600;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     border-radius: 15px;
+    background-color: #ff7b0049;
 }
 
 .container-3 h1{
@@ -261,6 +294,10 @@ button.next {
 .pg4-card img{
     width: 100%;
     max-height: 300px;
+}
+
+.pg4-card:hover{
+    padding: 30px;
 }
 
 .card-3 img{
@@ -313,7 +350,7 @@ button.next {
     border-radius: 10px;
 }
 
-input[type="button"]{
+input[type="submit"]{
     padding: 10px 55px;
     background-color: red;
     color: #fff;

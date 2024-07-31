@@ -15,3 +15,12 @@ function moveSlide(direction) {
 
     cards.style.transform = `translateX(${-currentSlide * (cardWidth + 20)}px)`;
 }
+
+
+
+// page reload
+
+function reload()
+{
+    window.location.reload();
+}
